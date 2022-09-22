@@ -1,0 +1,31 @@
+body {
+    background-color: darkorange;
+}
+
+i {
+    cursor: pointer;
+}
+
+/* This is for styling of separating 'OR' in login page. */
+#sepline {
+    display: flex;
+    margin-top: 10px;
+}
+
+#sepline:before,
+#sepline:after {
+    content: "";
+    /* This is for showing text upon line. */
+    flex: 1 1;
+    border-bottom: 1px solid rgb(98, 70, 255);
+    margin: auto;
+}
+
+.modal-content{
+    /* background-image: url('modalbg.jpg'); */
+    background-image: radial-gradient(circle, rgb(5, 5, 102), rgb(6, 6, 76), rgb(19, 19, 19));
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
