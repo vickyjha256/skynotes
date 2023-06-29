@@ -10,8 +10,7 @@ const mongoose = require('mongoose');
 // const mongoURI = "mongodb://localhost:27017/skynotes"; // We didn't use this because it creates error.
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
-const mongoURI = "mongodb+srv://vickyjha:vickycloud@cluster0.smbwgdu.mongodb.net/skynotes?retryWrites=true&w=majority"; // It's my cloud database connection string.
-// const mongoURI = process.env.MY_MONGODB; // It's my cloud database connection string.
+const mongoURI = process.env.MY_MONGODB; // It's my cloud database connection string.
 
 const connectToMongo = () => {
     mongoose.connect(mongoURI, () => { // This connect function is used to connect to database
